@@ -6,7 +6,7 @@
 //  Copyright © 2020 FLEX Team. All rights reserved.
 //
 
-#import "FLEXColorPreviewSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXColorPreviewSection.h"
 
 @implementation FLEXColorPreviewSection
 

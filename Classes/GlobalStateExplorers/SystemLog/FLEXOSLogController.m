@@ -6,8 +6,8 @@
 //  Copyright © 2020 FLEX Team. All rights reserved.
 //
 
-#import "FLEXOSLogController.h"
-#import "NSUserDefaults+FLEX.h"
+#import "Classes/GlobalStateExplorers/SystemLog/FLEXOSLogController.h"
+#import "Classes/Utility/Categories/NSUserDefaults+FLEX.h"
 #include <dlfcn.h>
 #include "ActivityStreamAPI.h"
 

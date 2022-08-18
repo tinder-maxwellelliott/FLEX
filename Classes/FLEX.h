@@ -7,19 +7,19 @@
 //  Copyright (c) 2020 FLEX Team. All rights reserved.
 //
 
-#import "FLEXManager.h"
-#import "FLEXManager+Extensibility.h"
-#import "FLEXManager+Networking.h"
+#import "Classes/Manager/FLEXManager.h"
+#import "Classes/Manager/FLEXManager+Extensibility.h"
+#import "Classes/Manager/FLEXManager+Networking.h"
 
-#import "FLEXExplorerToolbar.h"
-#import "FLEXExplorerToolbarItem.h"
-#import "FLEXGlobalsEntry.h"
+#import "Classes/Toolbar/FLEXExplorerToolbar.h"
+#import "Classes/Toolbar/FLEXExplorerToolbarItem.h"
+#import "Classes/Headers/FLEXGlobalsEntry.h"
 
-#import "FLEX-Core.h"
-#import "FLEX-Runtime.h"
-#import "FLEX-Categories.h"
-#import "FLEX-ObjectExploring.h"
+#import "Classes/Headers/FLEX-Core.h"
+#import "Classes/Headers/FLEX-Runtime.h"
+#import "Classes/Headers/FLEX-Categories.h"
+#import "Classes/Headers/FLEX-ObjectExploring.h"
 
-#import "FLEXMacros.h"
-#import "FLEXAlert.h"
-#import "FLEXResources.h"
+#import "Classes/Utility/FLEXMacros.h"
+#import "Classes/Utility/FLEXAlert.h"
+#import "Classes/Utility/FLEXResources.h"

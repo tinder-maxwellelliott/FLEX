@@ -6,8 +6,8 @@
 //  Copyright © 2020 FLEX Team. All rights reserved.
 //
 
-#import "FLEXTableViewSection.h"
-#import "FLEXObjectExplorer.h"
+#import "Classes/Headers/FLEXTableViewSection.h"
+#import "Classes/ObjectExplorers/FLEXObjectExplorer.h"
 
 typedef NS_ENUM(NSUInteger, FLEXMetadataKind) {
     FLEXMetadataKindProperties = 1,

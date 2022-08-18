@@ -6,22 +6,21 @@
 //  Copyright (c) 2020 FLEX Team. All rights reserved.
 //
 
-#import "FLEXObjectExplorerFactory.h"
-#import "FLEXGlobalsViewController.h"
-#import "FLEXClassShortcuts.h"
-#import "FLEXViewShortcuts.h"
-#import "FLEXWindowShortcuts.h"
-#import "FLEXViewControllerShortcuts.h"
-#import "FLEXUIAppShortcuts.h"
-#import "FLEXImageShortcuts.h"
-#import "FLEXLayerShortcuts.h"
-#import "FLEXColorPreviewSection.h"
-#import "FLEXDefaultsContentSection.h"
-#import "FLEXBundleShortcuts.h"
-#import "FLEXNSStringShortcuts.h"
-#import "FLEXNSDataShortcuts.h"
-#import "FLEXBlockShortcuts.h"
-#import "FLEXUtility.h"
+#import "Classes/ObjectExplorers/FLEXObjectExplorerFactory.h"
+#import "Classes/GlobalStateExplorers/Globals/FLEXGlobalsViewController.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXClassShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXViewShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXViewControllerShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXUIAppShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXImageShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXLayerShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/FLEXColorPreviewSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXDefaultsContentSection.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXBundleShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXNSStringShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXNSDataShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXBlockShortcuts.h"
+#import "Classes/Utility/FLEXUtility.h"
 
 @implementation FLEXObjectExplorerFactory
 static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = nil;
@@ -80,7 +79,7 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
     // TODO: rename it to FLEXNSObjectShortcuts or something?
     FLEXShortcutsSection *shortcutsSection = [FLEXShortcutsSection forObject:object];
     NSArray *sections = @[shortcutsSection];
-    
+
     Class customSectionClass = nil;
     Class cls = object_getClass(object);
     do {
@@ -90,7 +89,7 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
     if (customSectionClass) {
         id customSection = [customSectionClass forObject:object];
         BOOL isFLEXShortcutSection = [customSection respondsToSelector:@selector(isNewSection)];
-        
+
         // If the section "replaces" the default shortcuts section,
         // only return that section. Otherwise, return both this
         // section and the default shortcuts section.
@@ -98,7 +97,7 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
             sections = @[customSection];
         } else {
             // Custom section will go before shortcuts
-            sections = @[customSection, shortcutsSection];            
+            sections = @[customSection, shortcutsSection];
         }
     }
 
@@ -217,7 +216,7 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
 
             return nil;
         }
-        
+
         case FLEXGlobalsRowNetworkHistory:
         case FLEXGlobalsRowSystemLog:
         case FLEXGlobalsRowLiveObjects:
@@ -231,7 +230,7 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
         case FLEXGlobalsRowCount:
             return nil;
     }
-    
+
     return nil;
 }
 

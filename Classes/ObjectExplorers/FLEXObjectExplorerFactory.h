@@ -6,10 +6,10 @@
 //  Copyright (c) 2020 FLEX Team. All rights reserved.
 //
 
-#import "FLEXGlobalsEntry.h"
+#import "Classes/Headers/FLEXGlobalsEntry.h"
 
 #ifndef _FLEXObjectExplorerViewController_h
-#import "FLEXObjectExplorerViewController.h"
+#import "Classes/ObjectExplorers/FLEXObjectExplorerViewController.h"
 #else
 @class FLEXObjectExplorerViewController;
 #endif

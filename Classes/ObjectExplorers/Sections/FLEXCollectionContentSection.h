@@ -6,8 +6,8 @@
 //  Copyright © 2020 FLEX Team. All rights reserved.
 //
 
-#import "FLEXTableViewSection.h"
-#import "FLEXObjectInfoSection.h"
+#import "Classes/Headers/FLEXTableViewSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXObjectInfoSection.h"
 @class FLEXCollectionContentSection, FLEXTableViewCell;
 @protocol FLEXCollection, FLEXMutableCollection;
 

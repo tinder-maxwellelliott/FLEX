@@ -6,17 +6,17 @@
 //  Copyright © 2020 FLEX Team. All rights reserved.
 //
 
-#import "FLEXObjectExplorerFactory.h"
-#import "FLEXObjectExplorerViewController.h"
+#import "Classes/ObjectExplorers/FLEXObjectExplorerFactory.h"
+#import "Classes/ObjectExplorers/FLEXObjectExplorerViewController.h"
 
-#import "FLEXObjectExplorer.h"
+#import "Classes/ObjectExplorers/FLEXObjectExplorer.h"
 
-#import "FLEXShortcut.h"
-#import "FLEXShortcutsSection.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXShortcut.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXShortcutsSection.h"
 
-#import "FLEXCollectionContentSection.h"
-#import "FLEXColorPreviewSection.h"
-#import "FLEXDefaultsContentSection.h"
-#import "FLEXMetadataSection.h"
-#import "FLEXMutableListSection.h"
-#import "FLEXObjectInfoSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXCollectionContentSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXColorPreviewSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXDefaultsContentSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXMetadataSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXMutableListSection.h"
+#import "Classes/ObjectExplorers/Sections/FLEXObjectInfoSection.h"

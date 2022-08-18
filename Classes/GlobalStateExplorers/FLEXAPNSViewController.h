@@ -6,8 +6,8 @@
 //  Copyright © 2022 FLEX Team. All rights reserved.
 //
 
-#import "FLEXGlobalsEntry.h"
-#import "FLEXFilteringTableViewController.h"
+#import "Classes/Headers/FLEXGlobalsEntry.h"
+#import "Classes/Headers/FLEXFilteringTableViewController.h"
 
 @interface FLEXAPNSViewController : FLEXFilteringTableViewController <FLEXGlobalsEntry>
 
