@@ -7,8 +7,8 @@
 
 #import "FLEXWindowShortcuts.h"
 #import "FLEXShortcut.h"
-#import "FLEXAlert.h"
-#import "FLEXObjectExplorerViewController.h"
+#import "Classes/Headers/FLEXAlert.h"
+#import "Classes/Headers/FLEXObjectExplorerViewController.h"
 
 @implementation FLEXWindowShortcuts
 

@@ -11,6 +11,8 @@
 #import "Classes/Utility/Runtime/Objc/FLEXObjcInternal.h"
 #import "Classes/Utility/Runtime/Objc/FLEXTypeEncodingParser.h"
 #import "Classes/Utility/Runtime/Objc/Reflection/FLEXMethod.h"
+#import "Classes/GlobalStateExplorers/FLEXObjectRef.h"
+#import "Classes/Utility/Categories/NSObject+FLEX_Reflection.h"
 
 NSString * const FLEXRuntimeUtilityErrorDomain = @"FLEXRuntimeUtilityErrorDomain";
 

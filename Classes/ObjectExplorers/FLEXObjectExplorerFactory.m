@@ -20,6 +20,7 @@
 #import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXNSStringShortcuts.h"
 #import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXNSDataShortcuts.h"
 #import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXBlockShortcuts.h"
+#import "Classes/ObjectExplorers/Sections/Shortcuts/FLEXWindowShortcuts.h"
 #import "Classes/Utility/FLEXUtility.h"
 
 @implementation FLEXObjectExplorerFactory
